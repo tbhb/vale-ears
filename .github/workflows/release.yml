@@ -18,10 +18,16 @@ jobs:
 
       - name: Create packages
         run: |
-          cd styles
-
-          zip -r ../ears.zip ears
-          cd ..
+          mkdir -p pkg/ears/styles/ears
+          cp -r styles/ears/* pkg/ears/styles/ears/
+          
+          mkdir -p pkg/ears/styles/config/scripts
+          cp styles/config/scripts/Syntax.tengo pkg/ears/styles/config/scripts/
+          
+          mkdir -p pkg/ears/styles/config/vocabularies/ears
+          cp -r styles/config/vocabularies/ears/* pkg/ears/styles/config/vocabularies/ears/
+          
+          cd pkg && zip -r ../ears.zip ears
 
       - name: Extract release notes from CHANGELOG
         run: |
