@@ -1,0 +1,50 @@
+---
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+permissions:
+  contents: write
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Create packages
+        run: |
+          cd styles
+
+          zip -r ../ears.zip ears
+          cd ..
+
+      - name: Extract release notes from CHANGELOG
+        run: |
+          VERSION="${GITHUB_REF#refs/tags/v}"
+          awk -v ver="$VERSION" '
+            $0 ~ "^## \\[" ver "\\]" {flag=1; next}
+            /^## \[/ {flag=0}
+            flag
+          ' CHANGELOG.md \
+            | sed -E '/^<!-- vale (off|on) -->$/d' \
+            | awk 'NF{found=1} found' \
+            > release-notes.md
+          if [ ! -s release-notes.md ]; then
+            echo "No CHANGELOG section found for v${VERSION}" >&2
+            exit 1
+          fi
+          echo "--- release-notes.md ---"
+          cat release-notes.md
+
+      - name: Create release
+        uses: softprops/action-gh-release@v2
+        with:
+          files: |
+            ears.zip
+          body_path: release-notes.md
+          generate_release_notes: true

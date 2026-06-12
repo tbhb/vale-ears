@@ -1,0 +1,16 @@
+tag_prefix = "v"
+
+[changelog]
+path = "CHANGELOG.md"
+template = "remote"
+remote = "github.com"
+repository = "vale-ears"
+owner = "ears"
+authors = [
+  { username = "earsbot", signature = "EARS Bot" },
+  { username = "tbhb", signature = "Tony Burns" },
+]
+
+[commit_types]
+chore = { omit_from_changelog = true }
+test = { omit_from_changelog = true }
