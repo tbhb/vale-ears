@@ -1,6 +1,6 @@
 # Changelog
 
-## Unreleased ([ebee7ab..86ba177](https://github.com/tbhb/vale-ears/compare/ebee7ab..86ba177))
+## Unreleased ([ebee7ab..4850eaa](https://github.com/tbhb/vale-ears/compare/ebee7ab..4850eaa))
 
 ### Features
 
@@ -10,6 +10,7 @@
 
 #### Documentation
 
+- update changelog - ([4850eaa](https://github.com/tbhb/vale-ears/commit/4850eaa587cf30390abad41787e25444c637cb3e)) - [@tbhb](https://github.com/tbhb)
 - add negative examples of violations - ([8226dde](https://github.com/tbhb/vale-ears/commit/8226dde48d3ed182e7f416726770d24c80e02073)) - [@tbhb](https://github.com/tbhb)
 
 #### Continuous Integration
