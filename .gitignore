@@ -27,3 +27,16 @@ Thumbs.db
 *~
 .idea/
 .vscode/
+styles/ai-tells/
+styles/ai-tells-experimental/
+styles/ai-tells-commits/
+styles/config/scripts/ContentDuplication.tengo
+styles/config/scripts/ContractionAvoidance.tengo
+styles/config/scripts/ParagraphLengthVariance.tengo
+styles/config/scripts/PassiveDensity.tengo
+styles/config/scripts/SentenceLengthVariance.tengo
+styles/config/scripts/SentenceStartEntropy.tengo
+styles/config/scripts/SentenceStartRepetition.tengo
+styles/config/scripts/TransitionRepetition.tengo
+styles/config/scripts/TricolonDensityDocument.tengo
+styles/config/views/RuleMessage.yml
