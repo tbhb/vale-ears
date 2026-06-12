@@ -1,6 +1,8 @@
 # Changelog
 
-## Unreleased ([ebee7ab..4850eaa](https://github.com/tbhb/vale-ears/compare/ebee7ab..4850eaa))
+## [Unreleased]
+
+## [0.1.0] - 2026-06-12
 
 ### Features
 
@@ -10,6 +12,7 @@
 
 #### Documentation
 
+- regenerate changelog for v0.1.0 - ([df6664e](https://github.com/tbhb/vale-ears/commit/df6664e9c0cb6695913f54f082085a91ca3d6039)) - [@tbhb](https://github.com/tbhb)
 - update changelog - ([4850eaa](https://github.com/tbhb/vale-ears/commit/4850eaa587cf30390abad41787e25444c637cb3e)) - [@tbhb](https://github.com/tbhb)
 - add negative examples of violations - ([8226dde](https://github.com/tbhb/vale-ears/commit/8226dde48d3ed182e7f416726770d24c80e02073)) - [@tbhb](https://github.com/tbhb)
 
@@ -25,3 +28,5 @@
 
 - add document start to yml files - ([62d2282](https://github.com/tbhb/vale-ears/commit/62d22829b27f7a46d2bc91ca077e5f9c63ed3b88)) - [@tbhb](https://github.com/tbhb)
 - fix vale findings in prose - ([01c4a96](https://github.com/tbhb/vale-ears/commit/01c4a964d6dd852f02ec249fae47cf2d5f19b7a5)) - [@tbhb](https://github.com/tbhb)
+
+[0.1.0]: https://github.com/tbhb/vale-ears/compare/ebee7ab...v0.1.0
