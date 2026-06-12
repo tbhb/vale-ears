@@ -1,3 +1,4 @@
+---
 extends: substitution
 message: "EARS requires 'shall' for requirements. Consider using '%s'."
 level: warning

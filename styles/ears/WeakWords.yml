@@ -1,3 +1,4 @@
+---
 extends: existence
 message: "Weak word '%s' found. EARS requirements should be precise and unambiguous."
 level: warning
