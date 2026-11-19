@@ -20,6 +20,14 @@ Where a camera exists, the app shall record video.
 
 Where a microphone exists, the system shall capture audio.
 
+While the aircraft is on ground, when the pilot commands reverse thrust, the engine control system shall enable reverse thrust.
+
+While the system is in maintenance mode, if a sensor fails, then the system shall log the fault.
+
+When a user uploads a file, a folder, or a link, the system shall scan it.
+
+If the request has no token, an expired token, or a revoked token, then the server shall return 401.
+
 ## Non-Requirement Prose
 
 This is a standard paragraph that describes the system architecture. The database stores records correctly. The interface allows users to view their data. It can perform all listed operations. This document serves as a reference.

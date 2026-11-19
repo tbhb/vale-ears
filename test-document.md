@@ -14,6 +14,10 @@ If the network drops the system shall retry.
 
 In the event of a failure, the system shall halt.
 
+When a user logs in, it shall display the dashboard.
+
+While the server runs, when a client connects, it shall log the address.
+
 ## ears.Shall Violations
 
 The system must log all errors.

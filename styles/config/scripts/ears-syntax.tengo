@@ -1,6 +1,6 @@
 text := import("text")
 
-pattern := `(?:^|[.!?\n]\s*)[^a-z]*(?:(?:when|while|where|if)\b[^,]+,\s+)?(?:then\s+)?the\b.+?\bshall\b`
+pattern := `(?:^|[.!?\n]\s*)[^a-z]*(?:(?:when|while|where|if)\b.+?,\s+)*(?:then\s+)?the\b.+?\bshall\b`
 
 matches := []
 

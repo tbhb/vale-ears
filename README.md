@@ -48,6 +48,10 @@ If the network drops, then the system shall retry the connection.
 
 Where the system detects a camera, the application shall record video.
 
+While the aircraft is on ground, when the pilot commands reverse thrust, the engine control system shall enable reverse thrust.
+
+If the request has no token, an expired token, or a revoked token, then the server shall return 401.
+
 <!-- vale ears = NO -->
 <!-- vale ai-tells-experimental = YES -->
 <!-- vale ai-tells = YES -->
